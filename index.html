@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jahid Hasan - Resume/Portfolio</title>
-    <link rel="icon" href="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-1/495563656_122107947614855440_1152109947886773901_n.jpg?stp=c0.0.1542.1542a_dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=fShzMFoc9Z4Q7kNvwHSjTr-&_nc_oc=AdkKaqn2HL4-Ed1lnzQwUEIgtyLCUxpgu4cAC2dXb419YcsC6i735Rdyz1IouknOqsI&_nc_zt=24&_nc_ht=scontent.fdac174-1.fna&_nc_gid=ePEdwGQVHfANT9YcmPWeJg&oh=00_AfJjcRLLSuXKYkL1pX6lr1iZkymvRjXGZXR2jN9ceUASAw&oe=683A5359" type="image/x-icon" style="border-radius: 50%;">
+    <title>Jahid Hasan-Resume Portfolio</title>
+    <link rel="icon" href="jahid.jpg" type="image/x-icon" style="border-radius: 50%;">
     <style>
         /* Basic CSS Styling */
         body {
@@ -13,13 +13,27 @@
             line-height: 1.6;
             background-color: #7e9c8d;
             color: #333;
-        }
 
         header {
             background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
+            border: 4px solid;
+            border-image: linear-gradient(90deg, #ff9800, #2196f3, #43e97b, #ff9800) 1;
+            animation: headerBorderAnim 3s linear infinite;
+        }
+        @keyframes headerBorderAnim {
+            0% {
+            border-image-source: linear-gradient(90deg, #ff9800, #2196f3, #43e97b, #ff9800);
+            }
+            50% {
+            border-image-source: linear-gradient(270deg, #43e97b, #ff9800, #2196f3, #43e97b);
+            }
+            100% {
+            border-image-source: linear-gradient(90deg, #ff9800, #2196f3, #43e97b, #ff9800);
+            }
+        }
         }
 
         header a {
@@ -64,8 +78,27 @@
 <body>
 
     <header>
-      <img src="https://scontent.fdac174-1.fna.fbcdn.net/v/t39.30808-1/495563656_122107947614855440_1152109947886773901_n.jpg?stp=c0.0.1542.1542a_dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_ohc=fShzMFoc9Z4Q7kNvwHSjTr-&_nc_oc=AdkKaqn2HL4-Ed1lnzQwUEIgtyLCUxpgu4cAC2dXb419YcsC6i735Rdyz1IouknOqsI&_nc_zt=24&_nc_ht=scontent.fdac174-1.fna&_nc_gid=ePEdwGQVHfANT9YcmPWeJg&oh=00_AfJjcRLLSuXKYkL1pX6lr1iZkymvRjXGZXR2jN9ceUASAw&oe=683A5359" alt="Logo" style="height: 50px; vertical-align: middle; margin-right: 10px; border-radius: 50%;">
-      <h1 style="display: inline;">Jahid Hasan</h1>
+      <img src="jahid.jpg" alt="Logo" style="height: 50px; vertical-align: middle; margin-right: 10px; border-radius: 50%;">
+    <h1 class="animated-name" style="display: inline;">Jahid Hasan</h1>
+    <style>
+        .animated-name {
+            background: linear-gradient(90deg, #ff9800, #2196f3, #43e97b, #ff9800);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: colorMove 3s linear infinite;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes colorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
       <p>
       <a href="https://www.facebook.com/jahidads1/" target="_blank">
         <img src="https://img.icons8.com/?size=48&id=118497&format=png" alt="Facebook" style="height: 35px; vertical-align: middle; margin-right: 5px;">
@@ -116,17 +149,87 @@
       }
     </style>
 
-    <section id="summary" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; display: flex; justify-content: center; animation: fadeIn 1s ease-in-out;">
-      <div style="background-color: #c0b8b8; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 80%; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #2e7d32;">
+    <section id="summary" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; display: flex; justify-content: center; animation: fadeIn 1s ease-in-out; border: 4px solid; border-image: linear-gradient(90deg, #2e7d32, #2196f3, #ff9800, #2e7d32) 1; animation: borderAnim 3s linear infinite;">
+    <style>
+      @keyframes borderAnim {
+        0% {
+          border-image-source: linear-gradient(90deg, #2e7d32, #2196f3, #ff9800, #2e7d32);
+        }
+        50% {
+          border-image-source: linear-gradient(270deg, #ff9800, #43e97b, #2196f3, #2e7d32);
+        }
+        100% {
+          border-image-source: linear-gradient(90deg, #2e7d32, #2196f3, #ff9800, #2e7d32);
+        }
+      }
+      #summary {
+        border-width: 4px;
+        border-style: solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, #2e7d32, #2196f3, #ff9800, #2e7d32);
+        animation: borderAnim 3s linear infinite;
+      }
+    </style>
+      <div style="background-color: #ececec; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 80%; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #2e7d32;">
       <h2 style="color: #2e7d32; border-bottom: 2px solid #2e7d32; padding-bottom: 5px; font-family: 'Georgia', serif; font-size: 2em; display: flex; align-items: center; justify-content: center;">
         <img src="https://img.icons8.com/?size=64&id=44830&format=png" alt="Summary Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
-        Summary
+        <span class="animated-summary-title">Summary</span>
+        <style>
+          .animated-summary-title {
+            display: inline-block;
+            background: linear-gradient(90deg, #2e7d32, #2196f3, #ff9800, #2e7d32);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: summaryTitleColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #2e7d3299;
+          }
+          @keyframes summaryTitleColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </h2>
       <p style="font-size: 1.2em; line-height: 1.8; color: #0044ff; font-family: 'Arial', sans-serif; text-align: justify; margin-bottom: 15px;">
-      I am a dedicated Web Developer and Designer with a passion for crafting clean, functional, and visually appealing websites. With a strong foundation in HTML, CSS, JavaScript, and Bootstrap, I build responsive and user-friendly interfaces that reflect both modern trends and timeless design principles.
+    <span style="font-size: 1.3em; color: #00796b; font-weight: bold; font-family: 'Georgia', serif; text-shadow: 0 2px 6px #00bfa3a0;">
+        I am a dedicated Web Developer and Designer with a passion for crafting clean, functional, and visually appealing websites.
+    </span>
+    <br>
+    <span style="background: linear-gradient(90deg, #965c05 30%, #1d5f94 70%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; letter-spacing: 1.5px; font-size: 1.15em;">
+        With a strong foundation in 
+        <img src="https://img.icons8.com/?size=48&id=21278&format=png" alt="HTML Logo" style="height:18px; vertical-align:middle; margin-right:2px;">
+        <span style="color:#502d24; font-weight:bold;">HTML</span>, 
+        <img src="https://img.icons8.com/?size=48&id=21278&format=png" alt="CSS Logo" style="height:18px; vertical-align:middle; margin-right:2px; filter: hue-rotate(180deg);">
+        <span style="color:#2965f1; font-weight:bold;">CSS</span>, 
+        <img src="https://img.icons8.com/?size=48&id=108784&format=png" alt="JavaScript Logo" style="height:18px; vertical-align:middle; margin-right:2px;">
+        <span style="color:#f7df1e; font-weight:bold;">JavaScript</span>, and 
+        <img src="https://img.icons8.com/?size=48&id=84710&format=png" alt="Bootstrap Logo" style="height:18px; vertical-align:middle; margin-right:2px;">
+        <span style="color:#563d7c; font-weight:bold;">Bootstrap</span>,
+    </span>
+    <span style="color: #d84315; font-weight: bold; font-style: italic;">
+        I build responsive and user-friendly interfaces
+    </span>
+    <span style="color: #333; font-family: 'Georgia', serif;">
+        that reflect both modern trends and timeless design principles.
+    </span>
       </p>
       <p style="font-size: 1.2em; line-height: 1.8; color: #030303; font-family: 'Arial', sans-serif; text-align: justify;">
-      My approach combines technical expertise with creative vision, ensuring every project is not only efficient and secure but also elegant and intuitive. Whether developing from scratch or enhancing existing sites, I focus on quality, performance, and long-term maintainability. I take pride in delivering websites that meet client needs while respecting traditional standards of craftsmanship and professionalism.
+    <span style="background: linear-gradient(90deg, #5c3e11, #107532, #1d5380, #ff9800); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; font-size: 1.15em;">
+      My approach combines technical expertise with creative vision, ensuring every project is not only efficient and secure but also elegant and intuitive.
+    </span>
+    <br>
+    <span style="color: #388e3c; font-weight: bold;">
+      Whether developing from scratch or enhancing existing sites, I focus on quality, performance, and long-term maintainability.
+    </span>
+    <br>
+    <span style="background: linear-gradient(90deg, #d81b60, #1e88e5); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; font-size: 1.08em;">
+      I take pride in delivering websites that meet client needs while respecting traditional standards of craftsmanship and professionalism.
+    </span>
       </p>
       </div>
     </section>
@@ -146,97 +249,679 @@
       }
     </style>
 
-    <section id="skills" style="background-color: #E8F5E9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; animation: fadeIn 1s ease-in-out;">
-      <div style="background-color: #d3aaaa; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
+    <section id="skills" style="background-color: #E8F5E9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; animation: fadeIn 1s ease-in-out; border: 4px solid; border-image: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b) 1; animation: borderAnimSkills 3s linear infinite;">
+        <style>
+            @keyframes borderAnimSkills {
+                0% {
+                    border-image-source: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b);
+                }
+                50% {
+                    border-image-source: linear-gradient(270deg, #ff9800, #43e97b, #2196f3, #43e97b);
+                }
+                100% {
+                    border-image-source: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b);
+                }
+            }
+            #skills {
+                border-width: 4px;
+                border-style: solid;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b);
+                animation: borderAnimSkills 3s linear infinite;
+            }
+        </style>
+      <div style="background-color: #3b3838; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
       <h3 style="color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 5px; margin-top: 0; font-family: 'Georgia', serif; display: flex; align-items: center; justify-content: center;">
         <img src="https://img.icons8.com/?size=48&id=eLqYZB2LtBjj&format=gif" alt="Technical Skills Logo" style="height: 25px; vertical-align: middle; margin-right: 10px;">
-        Technical Skills
+        <span class="animated-technical-skills">Technical Skills</span>
+        <style>
+            .animated-technical-skills {
+                display: inline-block;
+                background: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: technicalSkillsColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #2196f399;
+            }
+            @keyframes technicalSkillsColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        </style>
       </h3>
       <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; text-align: left; font-family: 'Arial', sans-serif;">
       <li>
         <img src="https://img.icons8.com/?size=48&id=Rc0Xn5AtE8kX&format=gif" alt="Python Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-        Python
+        <span class="animated-skill">
+          Python
+        </span>
+        <style>
+          .animated-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #daa139, #725e1e, #a83339);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: skillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+          }
+          @keyframes skillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </li>
       <li>
         <img src="https://img.icons8.com/?size=48&id=tGvHBPJaKqEd&format=gif" alt="JavaScript Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-        JavaScript
+        <span class="animated-js-skill">
+          JavaScript
+        </span>
+        <style>
+          .animated-js-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #f7df1e, #ff9800, #2196f3, #f7df1e);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: jsSkillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+          }
+          @keyframes jsSkillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </li>
       <li>
         <img src="https://img.icons8.com/?size=30&id=102597&format=png" alt="SQL Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-        SQL
+        <span class="animated-sql-skill">SQL</span>
+        <style>
+          .animated-sql-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #336791, #00c3ff, #336791);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: sqlSkillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+          }
+          @keyframes sqlSkillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </li>
       <li>
         <img src="https://img.icons8.com/?size=64&id=wU62u24brJ44&format=png" alt="AWS Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-        AWS (EC2, S3)
+        <span class="animated-aws-skill">AWS (EC2, S3)</span>
+        <style>
+          .animated-aws-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff9900, #232f3e, #00a8e1, #ff9900);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: awsSkillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+          }
+          @keyframes awsSkillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </li>
       <li>
         <img src="https://img.icons8.com/?size=48&id=akG4VRhAoSii&format=gif" alt="Git Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-        Git
+        <span class="animated-git-skill">Git</span>
+        <style>
+          .animated-git-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #f34f29, #24292e, #f34f29);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gitSkillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+          }
+          @keyframes gitSkillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </li>
       <li>
         <img src="https://img.icons8.com/?size=48&id=22813&format=png" alt="Docker Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-        Docker
+        <span class="animated-docker-skill">Docker</span>
+        <style>
+          .animated-docker-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #2496ed, #323aaa, #ed24ed);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: dockerSkillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+          }
+          @keyframes dockerSkillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </li>
       <li>
         <img src="https://img.icons8.com/?size=48&id=nqg2tDAxO1LG&format=gif" alt="Agile Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-        Agile Methodologies
+        <span class="animated-agile-skill">Agile Methodologies</span>
+        <style>
+          .animated-agile-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff9800, #43e97b, #2196f3, #ff9800);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: agileSkillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #0002;
+          }
+          @keyframes agileSkillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </li>
       </ul>
       </div>
-      <div style="background-color: #a7b4d8; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
+      <div style="background-color: #404144; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
       <h3 style="color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 5px; margin-top: 0; font-family: 'Georgia', serif; display: flex; align-items: center; justify-content: center;">
         <img src="https://img.icons8.com/?size=50&id=LSnOpvfDkTKA&format=gif" alt="Software Logo" style="height: 25px; vertical-align: middle; margin-right: 10px;">
-        Software
+        <span class="animated-software-skill">Software</span>
+        <style>
+          .animated-software-skill {
+            display: inline-block;
+            background: linear-gradient(90deg, #1565c0, #43e97b, #ff9800, #1565c0);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: softwareSkillColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #1565c099;
+          }
+          @keyframes softwareSkillColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </h3>
       <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; text-align: left; font-family: 'Arial', sans-serif;">
         <li>
-          <img src="data:image/png;base64,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" alt="Microsoft Office Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-          Microsoft Office Suite -
+          <img src="Microsoft Office Suite.png" alt="Microsoft Office Logo" style="height: 13px; vertical-align: middle; margin-right: 5px;">
+        <span class="animated-office-skill">Microsoft Office Suite -</span>
+        <style>
+            .animated-office-skill {
+                display: inline-block;
+                background: linear-gradient(90deg, #0078d4, #ea4335, #34a853, #fbbc05, #0078d4);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: officeSkillColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #0002;
+            }
+            @keyframes officeSkillColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        </style>
             <br>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAvVBMVEX///8XZs8HPZNBpu4QWr0pfddCqO8AKozGz+JVrvAAWsw0juAjdNAOWLzg6fcXZ9Dr8fkUX8QAS7kAc9UdbdELYs7v9/0soO0AJ4xWiNjo9P3i5/FrldwAXs0pcdIAXc2mvukAV8y9z+/a5fZGf9aXs+Vhj9uBpOGLq+PM2vKyx+x1nN7L2fIANpDQ5/qKxPRis/Cu1vcth95RhNe4y+0AUcqhuugMSqVogLR4jLuVpskAIImjsdDU2+pUcKybDxyhAAAEp0lEQVR4nO2daV/aQBCHk6K1RjTYZjkqMUAQb8WzrVa//8cqCZndzaFYXZaMv//zpnZYJI+T2TOtjgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQNy4up5sWmF5erMavPe10GlbodKbtFQj+tKSXsQLFTauCjU3rgld2U9joXNk2tJzCRmNqWbBtOYWzJFo2tNzPJIaW+xoYwhCGMIQhDGEIQxjCEIYwhCEMYQhDLoZf30C9DUf9/eAV/IXsX3dMKpo23Gl6wv0gQlwbVDRsGH/cL3VcN6do2NA34ZcobhlTNGt4EBkydN3GW3qkt2DWMDByjyaI6y1DXJs0bHmmBF03WDfED5OGO7U0bMEQhjCEIQxhCEMYvt9QEO6iYGW0/obBaX/ORLtu0cuCfX2ZNabgjda0/oaRjGqX7clP66uod0zBo5CToXdGUZVEEcimAyXjyWDAKofhYVlGnMqmsWwqxhRrDVnVocqXkolOVFsZDA/kjyJiZeh6OxSuCDnOmO5IVYYTXn2pGw1KVy60trJXCWVI62dYGIoJhakQVWTGKGsrehQ59pgZqoxRIYb3WttWKXjELYdagYliICEbGryYAk2Xm2F4RPGsEMNc434hWNio42DoNik+L0Rxk2ucBWVtnkT8DIf0veNhPqfzYNo4HNDf+4KfoRrg04tX87g5aQ6HsgwLBwIsDEWfXkgL0StsPqdjvuxwjz2Ghq5LL6Q1R2V5m/2ZjA7qh3AQcjSUI0FSc3Iq3styOYr0ic9YcDRUk+qkKil3NCwmSwk5Uy0d6vAwVOPDrBCpZ925I+9g5kENbosnjzwMVecyK0Q/+/LEo5loX6gyPC2ePHIxHGWvxJ6UORXUfw4iNZ6UjseDpiGCpRqqhb6Qfcq+oA4o9mQZxsV3urvbhvi+3P1SWWeTu0xr1qVI2ZDu3NJYMTNcM8SSDYeUpAHtN83GCHnDjuW+TXGs4GMop50x7TcdCZXZQyrDdnmznIuhWsHTEJFkiwaOW8rwqPyUChdDtfyjcSNpEo3ysfJYwciwuKBIJ9iqi82oeA6HjaHILwqzTrO58H18DIsy88OXKL+Qui+NFZwMh/kPEFX37k3Fw2J8DPWdfDl3UYuOlKqDVT6GanKdkG0Oq0Ek4Yy3YW4rX2435YKHFWXIyVBt+TrpkrAiWPXMJiNDveZkA7WJ+NLzDYwM1QmotpLXq3NQ+WAxI0N98FOzM1+9q1f5YDEnQ7nQT1a/FNSGyap+hpehdno/VImV2sWtYIaGrrufEWgxvyrI1vDVB6Gq38LM8D3AEIYwhCEMYQhDGK7KsOL44ZMZFh5N+wh+TQ0H5pL4xRRdo4ZO09A/BPZ/1dWw5RtR9LeNCZo2dJzJMBSvsfh/jfB911wGl2DoxAeT3svcbO8uYs2k3zIMX6f1aPTya2i414UhDGEIQxjCEIYwhCEMYQhDGMIQhjCEYR0MP/9OlLNh2/CLZUHn97ldv/M/tg33LN+m3T3bhs6DVcXHv9YFE0VrN+r548MKBB3n6bnb3bBAt/ts/xbNaD99s8DTKn4JKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP6Hf6TaKnmkN87UAAAAAElFTkSuQmCC" alt="Word Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-            Word
+            <img src="word.png" alt="Word Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
+            <span class="animated-word-skill">Word</span>
+            <style>
+                .animated-word-skill {
+                    display: inline-block;
+                    background: linear-gradient(90deg, #2b579a, #00a4ef, #7fba00, #2b579a);
+                    background-size: 200% 200%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: wordSkillColorMove 2s linear infinite;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    transition: text-shadow 0.3s;
+                    text-shadow: 0 2px 8px #0002;
+                }
+                @keyframes wordSkillColorMove {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+            </style>
             <br>
             <img src="https://img.icons8.com/?size=80&id=WhSDHkKv9mNm&format=gif" alt="Excel Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-            Excel
+            <span class="animated-excel-skill">Excel</span>
+            <style>
+                .animated-excel-skill {
+                    display: inline-block;
+                    background: linear-gradient(90deg, #217346, #21a366, #b4ec51, #217346);
+                    background-size: 200% 200%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: excelSkillColorMove 2s linear infinite;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    transition: text-shadow 0.3s;
+                    text-shadow: 0 2px 8px #0002;
+                }
+                @keyframes excelSkillColorMove {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+            </style>
             <br>
             <img src="https://img.icons8.com/?size=48&id=aoS4Xr1gcqwp&format=gif" alt="PowerPoint Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-            PowerPoint
+            <span class="animated-powerpoint-skill">PowerPoint</span>
+            <style>
+                .animated-powerpoint-skill {
+                    display: inline-block;
+                    background: linear-gradient(90deg, #d24726, #ff9800, #fbbc05, #d24726);
+                    background-size: 200% 200%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: powerpointSkillColorMove 2s linear infinite;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    transition: text-shadow 0.3s;
+                    text-shadow: 0 2px 8px #0002;
+                }
+                @keyframes powerpointSkillColorMove {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+            </style>
         </li>
         <li>
           <img src="https://img.icons8.com/?size=50&id=UYiYSqRd9hld&format=gif" alt="Adobe Creative Suite Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-          Adobe Creative Suite -
+        <span class="animated-adobe-skill">Adobe Creative Suite -</span>
+        <style>
+            .animated-adobe-skill {
+                display: inline-block;
+                background: linear-gradient(90deg, #ff0000, #ff9900, #ff61a6, #ff0000);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: adobeSkillColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #0002;
+            }
+            @keyframes adobeSkillColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        </style>
             <br>
             <img src="https://img.icons8.com/?size=48&id=K8Ttz87NEjvn&format=gif" alt="Photoshop Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-            Photoshop
+            <span class="animated-photoshop-skill">Photoshop</span>
+            <style>
+                .animated-photoshop-skill {
+                    display: inline-block;
+                    background: linear-gradient(90deg, #31a8ff, #ff61a6, #001e36, #31a8ff);
+                    background-size: 200% 200%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: photoshopSkillColorMove 2s linear infinite;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    transition: text-shadow 0.3s;
+                    text-shadow: 0 2px 8px #0002;
+                }
+                @keyframes photoshopSkillColorMove {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+            </style>
             <br>
             <img src="https://img.icons8.com/?size=48&id=hksmgkMI669m&format=gif" alt="Illustrator Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-            Illustrator
+            <span class="animated-illustrator-skill">Illustrator</span>
+            <style>
+                .animated-illustrator-skill {
+                    display: inline-block;
+                    background: linear-gradient(90deg, #ff9a00, #ff61a6, #ff3c00, #ff9a00);
+                    background-size: 200% 200%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: illustratorSkillColorMove 2s linear infinite;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    transition: text-shadow 0.3s;
+                    text-shadow: 0 2px 8px #0002;
+                }
+                @keyframes illustratorSkillColorMove {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+            </style>
         </li>
       </ul>
       </div>
-      <div style="background-color: #9cdab7; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
+      <div style="background-color: #3d3d39; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
       <h3 style="color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 5px; margin-top: 0; font-family: 'Georgia', serif; display: flex; align-items: center; justify-content: center;">
         <img src="https://img.icons8.com/?size=50&id=ltxLh7NUuB6B&format=gif" alt="Communication Skills Logo" style="height: 25px; vertical-align: middle; margin-right: 10px;">
-        Communication Skills
+        <span class="animated-comm-title">Communication Skills</span>
+        <style>
+          .animated-comm-title {
+            display: inline-block;
+            background: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: commTitleColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #2196f399;
+          }
+          @keyframes commTitleColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </h3>
       <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; text-align: left; font-family: 'Arial', sans-serif;">
-      <li>Excellent written and verbal communication</li>
-      <li>Presentation skills</li>
-      <li>Active Listening</li>
-      <li>Conflict Resolution</li>
+    <li>
+      <span class="animated-comm-skill">Excellent written and verbal communication</span>
+      <style>
+        .animated-comm-skill {
+        display: inline-block;
+        background: linear-gradient(90deg, #43e97b, #38f9d7, #2196f3, #43e97b);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: commSkillColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes commSkillColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
+    <li>
+      <span class="animated-presentation-skill">Presentation skills</span>
+      <style>
+        .animated-presentation-skill {
+        display: inline-block;
+        background: linear-gradient(90deg, #ff9800, #f44336, #ff9800, #43e97b);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: presentationSkillColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes presentationSkillColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
+    <li>
+      <span class="animated-listening-skill">Active Listening</span>
+      <style>
+        .animated-listening-skill {
+        display: inline-block;
+        background: linear-gradient(90deg, #2196f3, #43e97b, #ff9800, #2196f3);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: listeningSkillColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes listeningSkillColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
+    <li>
+      <span class="animated-conflict-skill">Conflict Resolution</span>
+      <style>
+        .animated-conflict-skill {
+        display: inline-block;
+        background: linear-gradient(90deg, #f44336, #ff9800, #43e97b, #f44336);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: conflictSkillColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes conflictSkillColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
       </ul>
       </div>
-      <div style="background-color: #b7d685; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
+      <div style="background-color: #4e504c; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; border: 2px solid #1565c0;">
       <h3 style="color: #1565c0; border-bottom: 2px solid #1565c0; padding-bottom: 5px; margin-top: 0; font-family: 'Georgia', serif; display: flex; align-items: center; justify-content: center;">
         <img src="https://img.icons8.com/?size=48&id=IITEAlVNkuAG&format=gif" alt="Project Management Skills Logo" style="height: 25px; vertical-align: middle; margin-right: 10px;">
-        Project Management Skills
+        <span class="animated-pm-title">Project Management Skills</span>
+        <style>
+          .animated-pm-title {
+            display: inline-block;
+            background: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pmTitleColorMove 2s linear infinite;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            transition: text-shadow 0.3s;
+            text-shadow: 0 2px 8px #2196f399;
+          }
+          @keyframes pmTitleColorMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        </style>
       </h3>
       <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; text-align: left; font-family: 'Arial', sans-serif;">
-      <li>Agile</li>
-      <li>Scrum</li>
-      <li>Kanban</li>
-      <li>Project Planning</li>
-      <li>Risk Management</li>
+    <li>
+      <span class="animated-pm-agile">Agile</span>
+      <style>
+        .animated-pm-agile {
+        display: inline-block;
+        background: linear-gradient(90deg, #43e97b, #2196f3, #ff9800, #43e97b);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pmAgileColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes pmAgileColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
+    <li>
+      <span class="animated-pm-scrum">Scrum</span>
+      <style>
+        .animated-pm-scrum {
+        display: inline-block;
+        background: linear-gradient(90deg, #ff9800, #43e97b, #2196f3, #ff9800);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pmScrumColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes pmScrumColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
+    <li>
+      <span class="animated-pm-kanban">Kanban</span>
+      <style>
+        .animated-pm-kanban {
+        display: inline-block;
+        background: linear-gradient(90deg, #2196f3, #ff9800, #43e97b, #2196f3);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pmKanbanColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes pmKanbanColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
+    <li>
+      <span class="animated-pm-planning">Project Planning</span>
+      <style>
+        .animated-pm-planning {
+        display: inline-block;
+        background: linear-gradient(90deg, #43e97b, #ff9800, #2196f3, #43e97b);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pmPlanningColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes pmPlanningColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
+    <li>
+      <span class="animated-pm-risk">Risk Management</span>
+      <style>
+        .animated-pm-risk {
+        display: inline-block;
+        background: linear-gradient(90deg, #ff9800, #2196f3, #43e97b, #ff9800);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pmRiskColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #0002;
+        }
+        @keyframes pmRiskColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+      </style>
+    </li>
       </ul>
       </div>
     </section>
@@ -263,24 +948,86 @@
       }
     </style>
 
-    <section id="experience" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out;">
+    <section id="experience" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out; border: 4px solid; border-image: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2) 1; animation: borderAnimExp 3s linear infinite;">
+    <style>
+      @keyframes borderAnimExp {
+        0% {
+          border-image-source: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+        }
+        50% {
+          border-image-source: linear-gradient(270deg, #ff9800, #43e97b, #2196f3, #7e57c2);
+        }
+        100% {
+          border-image-source: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+        }
+      }
+      #experience {
+        border-width: 4px;
+        border-style: solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+        animation: borderAnimExp 3s linear infinite;
+      }
+    </style>
       <div style="background-color: #d1c4e9; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 90%; margin: auto; transition: transform 0.3s, box-shadow 0.3s; text-align: left; border: 2px solid #7e57c2;">
         <h2 style="color: #7e57c2; border-bottom: 2px solid #7e57c2; padding-bottom: 5px; font-family: 'Georgia', serif; font-size: 2em; text-align: center; display: flex; align-items: center; justify-content: center;">
           <img src="https://img.icons8.com/?size=50&id=nNRpaPWMdCDG&format=gif" alt="Experience Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
-          Experience
+        <span class="animated-experience-title">Experience</span>
+        <style>
+            .animated-experience-title {
+                display: inline-block;
+                background: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: experienceTitleColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #7e57c299;
+            }
+            @keyframes experienceTitleColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        </style>
         </h2>
         <article>
           <h3 style="color: #5e35b1; font-family: 'Georgia', serif; font-size: 1.5em; margin-bottom: 10px;">Web Developer | ABC Company | New York, NY | May 2025 - Present</h3>
-          <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; font-family: 'Arial', sans-serif;">
-            <li>Developed and maintained company website using HTML, CSS, JavaScript, and Bootstrap, ensuring responsive design and optimal user experience.</li>
-            <li>Implemented SEO best practices, resulting in a 20% increase in organic website traffic.</li>
-            <li>Designed and executed integrated marketing campaigns that generated over 100 qualified leads per month.</li>
-            <li>Managed the company’s social media presence across platforms, leading to a 30% growth in followers and engagement.</li>
-            <li>Created and published web content including blog articles, email newsletters, and promotional landing pages.</li>
-            <li>Collaborated with cross-functional teams to enhance website features and functionality.</li>
-            <li>Utilized analytics tools to track website performance and user behavior, making data-driven decisions to improve site usability.</li>
-            <li>Participated in weekly team meetings to discuss project progress and brainstorm new ideas for website enhancements.</li>
-          </ul>
+        <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; font-family: 'Arial', sans-serif;">
+            <li>
+                <strong style="color:#2196f3;">Developed and maintained company website</strong> using 
+                <span style="color:#ff9800;font-weight:bold;">HTML, CSS, JavaScript, and Bootstrap</span>, ensuring 
+                <span style="color:#43e97b;font-weight:bold;">responsive design</span> and optimal user experience.
+            </li>
+            <li>
+                Implemented <strong style="color:#388e3c;">SEO best practices</strong>, resulting in a 
+                <span style="color:#ff9800;font-weight:bold;">20% increase</span> in organic website traffic.
+            </li>
+            <li>
+                Designed and executed <strong style="color:#d81b60;">integrated marketing campaigns</strong> that generated over 
+                <span style="color:#2196f3;font-weight:bold;">100 qualified leads</span> per month.
+            </li>
+            <li>
+                Managed the company’s <strong style="color:#1565c0;">social media presence</strong> across platforms, leading to a 
+                <span style="color:#43e97b;font-weight:bold;">30% growth</span> in followers and engagement.
+            </li>
+            <li>
+                Created and published <strong style="color:#ff9800;">web content</strong> including blog articles, email newsletters, and promotional landing pages.
+            </li>
+            <li>
+                <strong style="color:#7e57c2;">Collaborated with cross-functional teams</strong> to enhance website features and functionality.
+            </li>
+            <li>
+                Utilized <span style="color:#388e3c;font-weight:bold;">analytics tools</span> to track website performance and user behavior, making 
+                <strong style="color:#ff9800;">data-driven decisions</strong> to improve site usability.
+            </li>
+            <li>
+                Participated in <strong style="color:#2196f3;">weekly team meetings</strong> to discuss project progress and brainstorm new ideas for website enhancements.
+            </li>
+        </ul>
         </article>
       </div>
     </section>
@@ -300,22 +1047,170 @@
       }
     </style>
 
-      <article style="background-color: #f3e5f5; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-bottom: 20px; transition: transform 0.3s, box-shadow 0.3s; border: 2px solid #7e57c2;">
+    <article style="background-color: #f3e5f5; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-bottom: 20px; transition: transform 0.3s, box-shadow 0.3s; border: 4px solid; border-image: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2) 1; animation: borderAnimExpArticle 3s linear infinite;">
+    <style>
+      @keyframes borderAnimExpArticle {
+        0% {
+        border-image-source: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+        }
+        50% {
+        border-image-source: linear-gradient(270deg, #ff9800, #43e97b, #2196f3, #7e57c2);
+        }
+        100% {
+        border-image-source: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+        }
+      }
+      article[style*="background-color: #f3e5f5"] {
+        border-width: 4px;
+        border-style: solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+        animation: borderAnimExpArticle 3s linear infinite;
+      }
+    </style>
         <h3 style="color: #5e35b1; font-family: 'Georgia', serif; font-size: 1.5em; margin-bottom: 10px;">Junior Web Developer | XYZ Company | Boston, MA | May 2024 - May 2025</h3>
         <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; font-family: 'Arial', sans-serif;">
-          <li>Assisted in the development of web applications using HTML, CSS, and JavaScript.</li>
-          <li>Participated in code reviews and contributed to team knowledge sharing.</li>
-          <li>Worked on bug fixes and feature enhancements for existing applications.</li>
-          <li>Assisted in the development of RESTful APIs for web applications.</li>
+          <li>
+            <span class="animated-junior-exp-1">Assisted in the development of web applications using HTML, CSS, and JavaScript.</span>
+            <style>
+              .animated-junior-exp-1 {
+                display: inline-block;
+                background: linear-gradient(90deg, #7e57c2, #2196f3, #ff9800, #7e57c2);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: juniorExp1ColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #7e57c299;
+              }
+              @keyframes juniorExp1ColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+              }
+            </style>
+          </li>
+          <li>
+            <span class="animated-junior-exp-2">Participated in code reviews and contributed to team knowledge sharing.</span>
+            <style>
+              .animated-junior-exp-2 {
+                display: inline-block;
+                background: linear-gradient(90deg, #2196f3, #ff9800, #7e57c2, #2196f3);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: juniorExp2ColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #2196f399;
+              }
+              @keyframes juniorExp2ColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+              }
+            </style>
+          </li>
+          <li>
+            <span class="animated-junior-exp-3">Worked on bug fixes and feature enhancements for existing applications.</span>
+            <style>
+              .animated-junior-exp-3 {
+                display: inline-block;
+                background: linear-gradient(90deg, #ff9800, #7e57c2, #2196f3, #ff9800);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: juniorExp3ColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #ff980099;
+              }
+              @keyframes juniorExp3ColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+              }
+            </style>
+          </li>
+          <li>
+            <span class="animated-junior-exp-4">Assisted in the development of RESTful APIs for web applications.</span>
+            <style>
+              .animated-junior-exp-4 {
+                display: inline-block;
+                background: linear-gradient(90deg, #2196f3, #7e57c2, #ff9800, #2196f3);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: juniorExp4ColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #2196f399;
+              }
+              @keyframes juniorExp4ColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+              }
+            </style>
+          </li>
         </ul>
       </article>
     </section>
 
-    <section id="education" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out;">
+    <section id="education" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out; border: 4px solid; border-image: linear-gradient(90deg, #1e88e5, #2196f3, #ff9800, #1e88e5) 1; animation: borderAnimEdu 3s linear infinite;">
+    <style>
+      @keyframes borderAnimEdu {
+        0% {
+          border-image-source: linear-gradient(90deg, #1e88e5, #2196f3, #ff9800, #1e88e5);
+        }
+        50% {
+          border-image-source: linear-gradient(270deg, #ff9800, #43e97b, #2196f3, #1e88e5);
+        }
+        100% {
+          border-image-source: linear-gradient(90deg, #1e88e5, #2196f3, #ff9800, #1e88e5);
+        }
+      }
+      #education {
+        border-width: 4px;
+        border-style: solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, #1e88e5, #2196f3, #ff9800, #1e88e5);
+        animation: borderAnimEdu 3s linear infinite;
+      }
+    </style>
       <div style="background-color: #bbdefb; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 90%; margin: auto; transition: transform 0.3s, box-shadow 0.3s; text-align: left; border: 2px solid #1e88e5;">
         <h2 style="color: #1e88e5; border-bottom: 2px solid #1e88e5; padding-bottom: 5px; font-family: 'Georgia', serif; font-size: 2em; text-align: center; display: flex; align-items: center; justify-content: center;">
           <img src="https://img.icons8.com/?size=50&id=tYGHPEO9yx8X&format=gif" alt="Education Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
-          Education
+        <span class="animated-education-title">Education</span>
+        <style>
+            .animated-education-title {
+                display: inline-block;
+                background: linear-gradient(90deg, #1e88e5, #2196f3, #ff9800, #1e88e5);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: educationTitleColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #1e88e599;
+            }
+            @keyframes educationTitleColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        </style>
         </h2>
         <article>
           <h3 style="color: #1565c0; font-family: 'Georgia', serif; font-size: 1.5em; margin-bottom: 10px;">Bachelor of Science in Computer Science | University of California, Berkeley | Berkeley, CA | May 2025</h3>
@@ -343,11 +1238,51 @@
       }
     </style>
 
-    <section id="certifications" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out;">
-      <div style="background-color: #f8bbd0; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 90%; margin: auto; transition: transform 0.3s, box-shadow 0.3s; text-align: left; border: 2px solid #d81b60;">
+    <section id="certifications" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out; border: 4px solid; border-image: linear-gradient(90deg, #d81b60, #2196f3, #ff9800, #d81b60) 1; animation: borderAnimCert 3s linear infinite;">
+        <style>
+            @keyframes borderAnimCert {
+                0% {
+                    border-image-source: linear-gradient(90deg, #d81b60, #2196f3, #ff9800, #d81b60);
+                }
+                50% {
+                    border-image-source: linear-gradient(270deg, #ff9800, #43e97b, #2196f3, #d81b60);
+                }
+                100% {
+                    border-image-source: linear-gradient(90deg, #d81b60, #2196f3, #ff9800, #d81b60);
+                }
+            }
+            #certifications {
+                border-width: 4px;
+                border-style: solid;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(90deg, #d81b60, #2196f3, #ff9800, #d81b60);
+                animation: borderAnimCert 3s linear infinite;
+            }
+        </style>
+        <div style="background-color: #f8bbd0; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 90%; margin: auto; transition: transform 0.3s, box-shadow 0.3s; text-align: left; border: 2px solid #d81b60;"></div>
         <h2 style="color: #d81b60; border-bottom: 2px solid #d81b60; padding-bottom: 5px; font-family: 'Georgia', serif; font-size: 2em; text-align: center; display: flex; align-items: center; justify-content: center;">
           <img src="https://img.icons8.com/?size=48&id=qgBsyv2LrviU&format=gif" alt="Certifications Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
-          Certifications
+        <span class="animated-certifications-title">Certifications</span>
+        <style>
+            .animated-certifications-title {
+                display: inline-block;
+                background: linear-gradient(90deg, #d81b60, #2196f3, #ff9800, #d81b60);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: certificationsTitleColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #d81b6099;
+            }
+            @keyframes certificationsTitleColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        </style>
         </h2>
         <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; font-family: 'Arial', sans-serif;">
           <li style="margin-bottom: 10px;">
@@ -375,11 +1310,51 @@
       }
     </style>
 
-    <section id="projects" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out;">
-      <div style="background-color: #c8e6c9; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 90%; margin: auto; transition: transform 0.3s, box-shadow 0.3s; text-align: left; border: 2px solid #388e3c;">
+    <section id="projects" style="background-color: #e8f5e9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; animation: fadeIn 1s ease-in-out; border: 4px solid; border-image: linear-gradient(90deg, #388e3c, #2196f3, #ff9800, #388e3c) 1; animation: borderAnimProjects 3s linear infinite;">
+        <style>
+            @keyframes borderAnimProjects {
+                0% {
+                    border-image-source: linear-gradient(90deg, #388e3c, #2196f3, #ff9800, #388e3c);
+                }
+                50% {
+                    border-image-source: linear-gradient(270deg, #ff9800, #43e97b, #2196f3, #388e3c);
+                }
+                100% {
+                    border-image-source: linear-gradient(90deg, #388e3c, #2196f3, #ff9800, #388e3c);
+                }
+            }
+            #projects {
+                border-width: 4px;
+                border-style: solid;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(90deg, #388e3c, #2196f3, #ff9800, #388e3c);
+                animation: borderAnimProjects 3s linear infinite;
+            }
+        </style>
+        <div style="background-color: #c8e6c9; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); width: 90%; margin: auto; transition: transform 0.3s, box-shadow 0.3s; text-align: left; border: 2px solid #388e3c;"></div>
         <h2 style="color: #388e3c; border-bottom: 2px solid #388e3c; padding-bottom: 5px; font-family: 'Georgia', serif; font-size: 2em; text-align: center; display: flex; align-items: center; justify-content: center;">
           <img src="https://img.icons8.com/?size=48&id=vQluDZhZhGCz&format=gif" alt="Projects Logo" style="height: 30px; vertical-align: middle; margin-right: 10px;">
-          Projects
+        <span class="animated-projects-title">Projects</span>
+        <style>
+            .animated-projects-title {
+                display: inline-block;
+                background: linear-gradient(90deg, #388e3c, #2196f3, #ff9800, #388e3c);
+                background-size: 200% 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: projectsTitleColorMove 2s linear infinite;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                transition: text-shadow 0.3s;
+                text-shadow: 0 2px 8px #388e3c99;
+            }
+            @keyframes projectsTitleColorMove {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+        </style>
         </h2>
         <article>
           <h3 style="color: #2e7d32; font-family: 'Georgia', serif; font-size: 1.5em; margin-bottom: 10px;">Personal Website</h3>
@@ -389,15 +1364,75 @@
           <ul style="font-size: 1.1em; line-height: 1.8; color: #424242; list-style-type: square; padding-left: 20px; margin: 0; font-family: 'Arial', sans-serif;">
             <li>
               <img src="https://img.icons8.com/?size=48&id=Zh3EQfzwFUbT&format=gif" alt="React Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-              Developed the front-end using React and the back-end using Node.js and Express.
+              <span class="animated-projects-skill">Developed the front-end using React and the back-end using Node.js and Express.</span>
+              <style>
+                .animated-projects-skill {
+                  display: inline-block;
+                  background: linear-gradient(90deg, #388e3c, #2196f3, #ff9800, #388e3c);
+                  background-size: 200% 200%;
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  animation: projectsSkillColorMove 2s linear infinite;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+                  transition: text-shadow 0.3s;
+                  text-shadow: 0 2px 8px #388e3c99;
+                }
+                @keyframes projectsSkillColorMove {
+                  0% { background-position: 0% 50%; }
+                  50% { background-position: 100% 50%; }
+                  100% { background-position: 0% 50%; }
+                }
+              </style>
             </li>
             <li>
               <img src="https://img.icons8.com/?size=80&id=vWtJE7UOBRGo&format=png" alt="Responsive Design Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-              Implemented a responsive design that adapts to different screen sizes.
+              <span class="animated-projects-skill2">Implemented a responsive design that adapts to different screen sizes.</span>
+              <style>
+                .animated-projects-skill2 {
+                  display: inline-block;
+                  background: linear-gradient(90deg, #2196f3, #43e97b, #ff9800, #2196f3);
+                  background-size: 200% 200%;
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  animation: projectsSkill2ColorMove 2s linear infinite;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+                  transition: text-shadow 0.3s;
+                  text-shadow: 0 2px 8px #2196f399;
+                }
+                @keyframes projectsSkill2ColorMove {
+                  0% { background-position: 0% 50%; }
+                  50% { background-position: 100% 50%; }
+                  100% { background-position: 0% 50%; }
+                }
+              </style>
             </li>
             <li>
               <img src="https://img.icons8.com/?size=50&id=v551nqGeHhGn&format=gif" alt="Deployment Logo" style="height: 20px; vertical-align: middle; margin-right: 5px;">
-              Deployed the website to GitHub Pages.
+              <span class="animated-projects-skill3">Deployed the website to GitHub Pages.</span>
+              <style>
+                .animated-projects-skill3 {
+                  display: inline-block;
+                  background: linear-gradient(90deg, #ff9800, #388e3c, #2196f3, #ff9800);
+                  background-size: 200% 200%;
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  animation: projectsSkill3ColorMove 2s linear infinite;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+                  transition: text-shadow 0.3s;
+                  text-shadow: 0 2px 8px #ff980099;
+                }
+                @keyframes projectsSkill3ColorMove {
+                  0% { background-position: 0% 50%; }
+                  50% { background-position: 100% 50%; }
+                  100% { background-position: 0% 50%; }
+                }
+              </style>
             </li>
           </ul>
         </article>
@@ -425,7 +1460,27 @@
     <br>
     <a href="https://github.com/jahidads" target="_blank" class="footer-link" style="display: inline-block; padding: 10px 20px; background-color: #3170af; color: #fff; border-radius: 5px; text-decoration: none; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, box-shadow 0.3s;">
       <img src="https://img.icons8.com/?size=48&id=12599&format=png" alt="GitHub Logo" style="height: 25px; vertical-align: middle; margin-right: 5px;">
-      Follow me
+    <span class="animated-footer-link">Follow me</span>
+    <style>
+      .animated-footer-link {
+        display: inline-block;
+        background: linear-gradient(90deg, #ffd700, #00d1ff, #3170af, #ffd700);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: footerLinkColorMove 2s linear infinite;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: text-shadow 0.3s;
+        text-shadow: 0 2px 8px #3170af99;
+      }
+      @keyframes footerLinkColorMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
     </a>
     </a>
   </div>
